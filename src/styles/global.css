@@ -1,1 +1,23 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  /* Font Family */
+  --font-poppins: 'Poppins', sans-serif;
+  /* Font Size */
+  --text-base: 0.9375rem; /* 15px */
+  --text-sm: 0.8125rem; /* 13px */
+  /* Line Height */
+  --leading-tight: 1.35;
+  --leading-normal: 1.4;
+  --leading-wide: 1.6;
+  /* Letter Spacing */
+  --tracking-wide: 0.25px;
+  /* Colors */
+  --color-gray-500: hsl(234, 12%, 34%);
+  --color-gray-400: hsl(210, 6%, 44%);
+  --color-red: hsl(0, 78%, 62%);
+  --color-cyan: hsl(180, 62%, 55%);
+  --color-blue: hsl(212, 86%, 64%);
+  --color-orange: hsl(34, 97%, 64%);
+}
