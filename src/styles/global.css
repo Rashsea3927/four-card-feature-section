@@ -20,4 +20,9 @@
   --color-cyan: hsl(180, 62%, 55%);
   --color-blue: hsl(212, 86%, 64%);
   --color-orange: hsl(34, 97%, 64%);
+  /* Container */
+  --container-sm: 41.25rem; /* 660px */
+  --container-lg: 69.625rem; /* 1114px */
+  /* Shadow */
+  --shadow-lg: 0 0.9375rem 1.875rem -0.6875rem hsla(213, 47%, 67%, 0.5);
 }
