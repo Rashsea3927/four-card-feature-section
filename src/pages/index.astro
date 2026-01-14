@@ -1,8 +1,55 @@
 ---
-import Layout from '@/layouts/layout.astro';
+import CalculatorIcon from '@assets/icon-calculator.svg';
+import KarmaIcon from '@assets/icon-karma.svg';
+import SupervisorIcon from '@assets/icon-supervisor.svg';
+import TeamBuilderIcon from '@assets/icon-team-builder.svg';
+import Layout from '@layouts/layout.astro';
 import '@styles/global.css';
+import { Image } from 'astro:assets';
 ---
 
 <Layout>
-	<h1>Hello World</h1>
+  <main class="font-poppins pt-14 pb-12 sm:pt-20 sm:pb-20">
+    <div class="mx-auto mb-15 max-w-[316px] text-center sm:max-w-[540px]">
+      <h1 class="mb-4 grid">
+        <span class="text-2xl leading-normal font-extralight tracking-normal text-gray-500 sm:text-4xl">Reliable, efficient delivery</span>
+        <span class="text-2xl leading-normal font-semibold tracking-normal text-gray-500 sm:text-4xl">Powered by Technology</span>
+      </h1>
+      <p class="text-base leading-normal tracking-normal text-gray-500">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
+    </div>
+    <div class="mx-auto grid max-w-[316px] justify-center gap-8 sm:max-w-sm sm:grid-cols-2 sm:px-8 md:px-0 lg:max-w-lg lg:grid-cols-3 lg:grid-rows-2 lg:px-10">
+      <!-- Supervisor -->
+      <div class="before:bg-cyan relative h-[250px] rounded-lg bg-white p-8 shadow-lg before:absolute before:top-0 before:left-0 before:h-1 before:w-full before:rounded-t-lg before:content-[''] sm:row-start-2 lg:row-span-2 lg:row-start-1 lg:self-center">
+        <div class="mb-8">
+          <h2 class="mb-2 text-xl leading-tight font-semibold tracking-normal text-gray-500">Supervisor</h2>
+          <p class="leading-wide text-base tracking-normal text-gray-400">Monitors activity to identify project roadblocks</p>
+        </div>
+        <Image class="ml-auto" src={SupervisorIcon} alt="Supervisor Icon" width={64} height={64} />
+      </div>
+      <!-- Team Builder -->
+      <div class="before:bg-red relative h-[250px] rounded-lg bg-white p-8 shadow-lg before:absolute before:top-0 before:left-0 before:h-1 before:w-full before:rounded-t-lg before:content-[''] sm:col-span-2 sm:row-start-1 sm:w-1/2 sm:justify-self-center lg:col-span-1 lg:col-start-2 lg:w-auto lg:justify-self-auto">
+        <div class="mb-8">
+          <h2 class="mb-2 text-xl leading-tight font-semibold tracking-normal text-gray-500">Team Builder</h2>
+          <p class="leading-wide text-base tracking-normal text-gray-400">Scans our talent network to create the optimal team for your project</p>
+        </div>
+        <Image class="ml-auto" src={TeamBuilderIcon} alt="Team Builder Icon" width={64} height={64} />
+      </div>
+      <!-- Karma -->
+      <div class="before:bg-orange relative h-[250px] rounded-lg bg-white p-8 shadow-lg before:absolute before:top-0 before:left-0 before:h-1 before:w-full before:rounded-t-lg before:content-[''] sm:row-start-2">
+        <div class="mb-8">
+          <h2 class="mb-2 text-xl leading-tight font-semibold tracking-normal text-gray-500">Karma</h2>
+          <p class="leading-wide text-base tracking-normal text-gray-400">Regularly evaluates our talent to ensure quality</p>
+        </div>
+        <Image class="ml-auto" src={KarmaIcon} alt="Karma Icon" width={64} height={64} />
+      </div>
+      <!-- Calculator -->
+      <div class="before:bg-blue relative h-[250px] rounded-lg bg-white p-8 shadow-lg before:absolute before:top-0 before:left-0 before:h-1 before:w-full before:rounded-t-lg before:content-[''] sm:col-span-2 sm:row-start-3 sm:w-1/2 sm:justify-self-center lg:col-span-1 lg:col-start-3 lg:row-span-2 lg:row-start-1 lg:w-auto lg:self-center">
+        <div class="mb-8">
+          <h2 class="mb-2 text-xl leading-tight font-semibold tracking-normal text-gray-500">Calculator</h2>
+          <p class="leading-wide text-base tracking-normal text-gray-400">Uses data from past projects to provide better delivery estimates</p>
+        </div>
+        <Image class="ml-auto" src={CalculatorIcon} alt="Calculator Icon" width={64} height={64} />
+      </div>
+    </div>
+  </main>
 </Layout>
